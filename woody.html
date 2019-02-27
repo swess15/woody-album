@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Woody's Album</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Courgette|Crimson+Text|Righteous|Tangerine|Yrsa" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .bg {
+            background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0HBgkIBw4SBgkGBg0FBgYGDBAICRANFBEWFhQRExMYHCggGBolGxMVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0FFSsZExkrKysrKysrLSsrKysrKysrKysrKystKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKIBNgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAwQBBf/EABYQAQEBAAAAAAAAAAAAAAAAAAASEf/EABgBAQEBAQEAAAAAAAAAAAAAAAADAgYF/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/APEAeo5gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSCGiCGa1GeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeHV4CkaIIXghKqRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCCF4IKRCBeHSkXghoghOqRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnh1eApGiCF4ITqsQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgheCCkQgXgKRokleCE6pEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJJXggpEJF4CkaZJXghKqRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCSV4IKRCReApGiCGiCE6rGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeBogKRoghoghOqRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnghoggpGeCGiCCkZ4IaIIKRnhxphwpFsMdGG3MMdAcwx0BzDHQHMMdAcwx0BzDHQHMMdAcwx0BzDHQHMMdAcwx0BzDHQHMMdAcwx0BzDHQHMMdAcwx0BzDHQHMdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z");
+            background-size: cover;
+        }
+        .btn {
+            width: 60px;
+            height: 30px;
+            background-color: rgba(207, 207, 207, 0.336);
+            font-size: 13px;
+            text-align: center;
+            padding: 0;
+        }
+        h5 {
+            font-family: 'Crimson Text', serif;
+            color: white;
+            font-size: 25px;
+        }
+        .media-body > p {
+            font-family: 'Yrsa', serif;
+            font-size: 18px;
+            color: white;
+        }
+        p.name {
+            font-family: 'Courgette', cursive;
+            color: rgb(157, 229, 226);
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body class="bg" style="width: 100%; height:2500px; margin-top:52px">
+        <header class="">
+            <h1 class="m-1 mb-3 p-3 mx-auto shadow rounded text-right" style="width:100%; font-family: 'Righteous', cursive; text-align:center; color:rgb(243, 213, 213); background-color:rgba(255, 255, 255, 0);">Woody's Album</h1>
+        </header>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="height:40px; background-color:rgba(255, 255, 255, 0.233);">
+                <a class="navbar-brand" href="./index_연습.html" style="font-family: 'Righteous', cursive;color:rgba(0, 255, 255, 0.623)"><img src="./img/logo.png" alt="" width="50px">  Wooooooody</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"> 
+                            <a class="nav-link" href="#" style="color: white">
+                                menu 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white">
+                                menu 2
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white">
+                                menu 3
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white">
+                                menu 4
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                                more
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">Add1</a>
+                                <a class="dropdown-item">Add2</a>
+                                <a class="dropdown-item">Add3</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex align-items-stretch" style="height:2380px">
+            <aside class="border-right d-flex" style="width:20%;">
+                <div class="ml-auto mr-4 text-right" style="margin:310px">
+                    <h5 style="color:rgb(59, 58, 57)">Wooooooooody</h5>
+                    <p style="margin:0; color:rgb(59, 58, 57)">2019.02.27</p>
+                    <p style="margin:0; color:rgb(59, 58, 57)">Kyungin & Seokhwi</p>
+                    <hr/>
+                    <button class="btn" style="color: white">HOME</button>
+                    <button class="btn" style="color: white">Close</button>
+                </div>
+            </aside>
+            <section class="flex-grow-1">
+                <div class="container mt-5">
+                    <h3 class="text-center" style="color: white; font-family: 'Anton', sans-serif;">Main section</h3>
+                    <div class="media mb-4 p-2 border shadow">
+                        <div class="media-body">
+                            <h5>Introducing Woody's Album</h5>
+                            <p class="name">by Kyungin</p>
+                            <img src="./img/1.jpg" class="img-fluid d-block ml-5 mb-3 rounded-lg float-left" style="width:350px">
+                            <p style="clear:both">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum voluptatibus ad est consequatur, nisi perferendis. Cum ipsam voluptatum esse ullam animi. Ut delectus sequi quae eaque, atque deleniti magnam!</p>
+                        </div>
+                        <img src="./img/jin.png" alt="bootstrap" class="rounded-1 mt-2 mr-2" style="width:60px">
+                    </div>
+                    <div class="media mb-4 p-2 border shadow">
+                            <div class="media-body">
+                                <h5>Woody is cooooooool handsome</h5>
+                                <p class="name">by Kyungin</p>
+                                <img src="./img/3.jpg" class="img-fluid d-block ml-5 mb-3 rounded-lg float-left" style="width:350px">
+                                <p style="clear:both">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum voluptatibus ad est consequatur, nisi perferendis. Cum ipsam voluptatum esse ullam animi. Ut delectus sequi quae eaque, atque deleniti magnam!</p>
+                            </div>
+                            <img src="./img/jin.png" alt="bootstrap" class="rounded-1 mt-2 mr-2" style="width:60px"> 
+                    </div>
+                    <div class="media mb-4 p-2 border shadow">
+                            <div class="media-body">
+                                <h5>But.....</h5>
+                                <p class="name">by Kyungin</p>
+                                <img src="./img/2.jpg" class="img-fluid d-block ml-5 mb-3 rounded-lg float-left" style="width:350px">
+                                <p style="clear:both">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum voluptatibus ad est consequatur, nisi perferendis. Cum ipsam voluptatum esse ullam animi. Ut delectus sequi quae eaque, atque deleniti magnam!</p>
+                            </div>
+                            <img src="./img/jin.png" alt="bootstrap" class="rounded-1 mt-2 mr-2" style="width:60px"> 
+                    </div>
+                    <div class="media mb-4 p-2 border shadow">
+                            <div class="media-body">
+                                <h5>Haha...</h5>
+                                <p class="name">by Seokhwi</p>
+                                <img src="./img/5.jpg" class="img-fluid d-block ml-5 mb-3 rounded-lg float-left" style="width:350px">
+                                <img src="./img/6.jpg" class="img-fluid d-block ml-5 mb-3 rounded-lg float-left" style="width:350px">
+                                <p style="clear:both">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum voluptatibus ad est consequatur, nisi perferendis. Cum ipsam voluptatum esse ullam animi. Ut delectus sequi quae eaque, atque deleniti magnam!</p>
+                            </div>
+                            <img src="./img/me.png" alt="bootstrap" class="rounded-1 mt-2 mr-2" style="width:60px"> 
+                    </div>
+                    <div class="media mb-4 p-2 border shadow">
+                            <div class="media-body">
+                                <h5>cute...</h5>
+                                <p class="name">by Woody</p>
+                                <img src="./img/8.jpg" class="img-fluid d-block ml-5 mb-3 rounded-lg float-left" style="width:350px">
+                                <img src="./img/7.jpg" class="img-fluid d-block ml-5 mb-3 rounded-lg float-left" style="width:350px">
+                                <p style="clear:both">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum voluptatibus ad est consequatur, nisi perferendis. Cum ipsam voluptatum esse ullam animi. Ut delectus sequi quae eaque, atque deleniti magnam!</p>
+                            </div>
+                            <img src="./img/wd.png" alt="bootstrap" class="rounded-1 mt-2 mr-2" style="width:60px"> 
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+        </div>
+        
+        <footer class="row fixed-bottom bg-info">
+            <div class="col border border-primary" style="color:rgba(255, 255, 255, 0.938)">@2019 swess</div>
+        </footer>
+</body>
+</html>
